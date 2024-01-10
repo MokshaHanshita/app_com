@@ -68,6 +68,7 @@ class Home():
                                   text='Search By Author',font=("Arial", 20))
         self.user_entry2 = ctk.CTkEntry(master=self.welcome_frame,
                                        placeholder_text="Enter the Author Name",width=180)
+        genre=self.user_entry.get()
         
         
         self.user_entry1.place(x=180, y=400)
@@ -86,5 +87,4 @@ class Home():
         self.user_entry2.place(x=180,y=500)
     def show_screen1(app):
         screen1_obj=screen_1(app)
-
-        
+        return(genre)
